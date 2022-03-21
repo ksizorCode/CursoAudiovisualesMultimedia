@@ -1,3 +1,4 @@
+// esto lista en un array multidimensinal los tipos de planos
 let superPlanos=[
     ['primerisimoprimerplano.jpg',      'Primerísmo Primer Plano' ,      'Encuadre muy cercano que enfoca un detalle'],
     ['primerplano.jpg',                 'Primer Plano' ,                 'Plano que encuadra un elemento importante'],
@@ -32,7 +33,7 @@ function random(min, max) {
     document.getElementById('btnSiguiente').style.display='none';
     document.getElementById('btnComprobar').style.display='block';
     document.getElementById('opciones').style.display='block';
-    document.getElementById('texto').innerHTML="Elije un tipo de plano en el desplegable y pulsa comprobar.";
+    document.getElementById('texto').innerHTML="Elije un tipo de plano en el desplegable y pulsa comprobar para empezar a jugar.";
     document.getElementById('descripcion').innerHTML="";
     
     turnos++;
@@ -64,10 +65,7 @@ function comprobar(){
     document.getElementById('btnSiguiente').style.display='block';
     document.getElementById('btnComprobar').style.display='none';
     document.getElementById('opciones').style.display='none';
-
-
-
-
 }
 
+//lanza la función siguiente para generar una imagen aleatoria y empezar a jugar
  siguiente();
